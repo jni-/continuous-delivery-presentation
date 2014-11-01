@@ -1,0 +1,106 @@
+#logo-live-feedback {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 32px;
+  line-height: 32px;
+  color: #13daec;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#logo-elapse {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+
+#twitter {
+  position: fixed;
+  top: 25px;
+  left: 48%;
+  font-size: 32px;
+  line-height: 32px;
+  color: #13daec;
+  font-weight: bold;
+}
+
+#states {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+}
+
+#states .state {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #13daec;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.current-state-1 #states #state-1,
+.current-state-2 #states #state-1,
+.current-state-3 #states #state-1,
+.current-state-4 #states #state-1,
+.current-state-5 #states #state-1,
+.current-state-6 #states #state-1,
+.current-state-7 #states #state-1,
+.current-state-8 #states #state-1,
+.current-state-9 #states #state-1,
+
+.current-state-2 #states #state-2,
+.current-state-3 #states #state-2,
+.current-state-4 #states #state-2,
+.current-state-5 #states #state-2,
+.current-state-6 #states #state-2,
+.current-state-7 #states #state-2,
+.current-state-8 #states #state-2,
+.current-state-9 #states #state-2,
+
+.current-state-3 #states #state-3,
+.current-state-4 #states #state-3,
+.current-state-5 #states #state-3,
+.current-state-6 #states #state-3,
+.current-state-7 #states #state-3,
+.current-state-8 #states #state-3,
+.current-state-9 #states #state-3,
+
+.current-state-4 #states #state-4,
+.current-state-5 #states #state-4,
+.current-state-6 #states #state-4,
+.current-state-7 #states #state-4,
+.current-state-8 #states #state-4,
+.current-state-9 #states #state-4,
+
+.current-state-5 #states #state-5,
+.current-state-6 #states #state-5,
+.current-state-7 #states #state-5,
+.current-state-8 #states #state-5,
+.current-state-9 #states #state-5,
+
+.current-state-6 #states #state-6,
+.current-state-7 #states #state-6,
+.current-state-8 #states #state-6,
+.current-state-9 #states #state-6,
+
+.current-state-7 #states #state-7,
+.current-state-8 #states #state-7,
+.current-state-9 #states #state-7,
+
+.current-state-8 #states #state-8,
+.current-state-9 #states #state-8,
+
+.current-state-9 #states #state-9
+{
+  background-color: #12daec;
+  color: white;
+}
+

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/mine.css" />
 
     <script>
       if( window.location.search.match( /print-pdf/gi ) ) {
@@ -35,11 +36,46 @@
 
   <body>
 
+    <div id="logo-live-feedback">
+      <img src="images/logo-live-feedback.png" width="25px" /> http://live-feedback.net
+    </div>
+
+    <div id="logo-elapse">
+      <img src="images/logo-elapse.png" width="200px" />
+    </div>
+
+    <div id="twitter">
+      <img src="images/twitter.png" width="25px" /> @jni_viens
+    </div>
+
+    <div id="states">
+      <div class="state" id="state-1">1</div>
+      <div class="state" id="state-2">2</div>
+      <div class="state" id="state-3">3</div>
+      <div class="state" id="state-4">4</div>
+      <div class="state" id="state-5">5</div>
+      <div class="state" id="state-6">6</div>
+      <div class="state" id="state-7">7</div>
+      <div class="state" id="state-8">8</div>
+      <div class="state" id="state-9">9</div>
+    </div>
+
     <div class="reveal">
 
       <div class="slides">
         <section>
-          <h1>First slide</h1>
+          <h1>Livraison continue</h1>
+          <h3>Une mise en production à chaque <a href="#">heure</a> de la journée</h3>
+        </section>
+
+        <section data-state="current-state-1">
+          <section>
+            <h2>Down one</h2>
+          </section>
+
+          <section>
+            <h2>Down 2</h2>
+          </section>
         </section>
 
       </div>
