@@ -66,15 +66,116 @@
         <section>
           <h1>Livraison continue</h1>
           <h3>Une mise en production à chaque <a href="#">heure</a> de la journée</h3>
+          <aside class="notes">
+            + Me présenter
+          </aside>
         </section>
 
-        <section data-state="current-state-1">
+        <section>
+          <h2>Les fameuses mise en production...</h2>
+          <p>Vous aimez ça?</p>
+          <aside class="notes">
+            Questions :
+            - Qui a déjà fait une MEP? La nuit? La fds?
+            - Qui aime ça?
+            - Qui a confiance que ça ne plantera pas?
+            - MEP OK sur staging, mais plante en prod?
+          </aside>
+        </section>
+
+        <section>
+          <h2>Tenons-nous au courant!</h2>
+          <p><a href="http://live-feedback.net">http://live-feedback.net</a></p>
+          <aside class="notes">
+            Faire la mise en prod
+          </aside>
+        </section>
+
+        <section>
           <section>
-            <h2>Down one</h2>
+            <h2>Qu'est-ce qu'on vient de réalise?</h2>
+            <p>On s'est donné les moyens de faire de la livraison continue!</p>
           </section>
 
           <section>
-            <h2>Down 2</h2>
+            <h2>C'est plus que de l'intégration continue</h2>
+          </section>
+
+          <section>
+            <h2>Ce n'est pas du déploiement continu</h2>
+          </section>
+
+          <section>
+            <h2>Qui serait assez confiant pour faire une mise en production lors d'une présentation?</h2>
+            <p>Pourquoi?</section>
+            <aside class="notes">
+              Annectode : chez Etsy tu dois faire une MEP la première journée. - http://codeascraft.com/2011/02/04/how-does-etsy-manage-development-and-operations/
+            </aside>
+          </section>
+        </section>
+
+
+        <section data-state="current-state-1">
+          <section>
+            <h2>Étape 1</h2>
+            <p>Tout doit être dans le contrôle de source</p>
+          </section>
+
+          <section>
+            <h2>La configuration</h2>
+            <p>Des serveurs, des environnements de développement, etc.</p>
+            <aside class="notes">
+              Montrer mon env. de dev.
+            </aside>
+          </section>
+
+          <section>
+            <h2>La base de données</h2>
+            <p>Ou les migrations nécessaires</p>
+          </section>
+
+          <section>
+            <h2>Le code</h2>
+            <p>Ça semble évident, mais absolument tout doit y être : cronjob, services, etc.</p>
+          </section>
+
+          <section>
+            <h2>Tout ceci est incrémental!</h2>
+            <aside class="notes">
+              FB a tout centralisé... méga hg, mais c'est OK - https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/
+            </aside>
+          </section>
+        </section>
+
+        <section data-state="current-state-2">
+          <section>
+            <h2>Étape 2 </h2>
+            <p>Configuration des environnements</p>
+          </section>
+
+          <section>
+            <h2>Un environnement de développement toujours prêt</h2>
+            <aside class="notes">
+              Demander combien de temps ça prend setter un nouvel employé.
+              Démontrer mon env de dev
+            </aside>
+          </section>
+
+          <section>
+            <h2>Les modifications directement sur le serveur</h2>
+            <p>La pire gaffe à faire!</p>
+            <aside class="notes">
+              Bien sûr OK si ta compagnie saigne de l'argent.
+            </aside>
+          </section>
+
+          <section>
+            <h2>Docker</h2>
+            <p>Un conteneur pour tout le monde</p>
+            <aside class="notes">
+              Contient tous les outils pour rouler le site
+              Évidement pas la seule solution
+            </aside>
           </section>
         </section>
 
@@ -93,8 +194,8 @@
       history: true,
       center: true,
 
-      theme: "default", 
-      transition: 'default', 
+      theme: "default",
+      transition: 'concave',
 
       dependencies: [
         { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
