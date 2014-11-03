@@ -62,7 +62,7 @@
       <div class="slides">
         <section>
           <h2>Utilisez votre téléphone ou autre pour aller sur ce site</h2>
-          <p><a href="http://live-feedback.net">http://live-feedback.net</a></p>
+          <h2><a href="http://live-feedback.net">http://live-feedback.<u>net</u></a></h2>
         </section>
 
         <section>
@@ -112,12 +112,13 @@
             <p>Pourquoi?</p>
             <aside class="notes">
               Annectode : chez Etsy tu dois faire une MEP la première journée. - http://codeascraft.com/2011/02/04/how-does-etsy-manage-development-and-operations/
+              Ne pas dire tout suite l'argument du bus factor, juste confiance, facilité, etc
             </aside>
           </section>
 
           <section>
             <h2>Ça ne s'obtient pas en 2 minutes</h2>
-            <p>Mais ça peut valoir la peine</p>
+            <p>Mais on peut s'y rendre de façon graduelle</p>
           </section>
 
         </section>
@@ -136,13 +137,16 @@
             <h2>La configuration</h2>
             <p>Des serveurs, des environnements de développement, etc.</p>
             <aside class="notes">
-              Montrer mon env. de dev.
+              NE PAS Montrer mon env. de dev.
             </aside>
           </section>
 
           <section>
             <h2>La base de données</h2>
             <p>Ou les migrations nécessaires</p>
+            <aside class="notes">
+              Sujet vaste, on en reparlera...
+            </aside>
           </section>
 
           <section>
@@ -160,7 +164,7 @@
           <section>
             <h2>Tout ceci est testable!</h2>
             <aside class="notes">
-              Par exemple: chef, puppter
+              Par exemple: chef, puppet
               Les migrations ça se test
             </aside>
           </section>
@@ -185,6 +189,8 @@
             <p>La pire gaffe à faire!</p>
             <aside class="notes">
               Bien sûr OK si ta compagnie saigne de l'argent.
+              Sinon: pas rejouable, pas "hardened by time", erreur humaine, perd la trace.
+              Doc word d'installation VS script
             </aside>
           </section>
 
@@ -236,13 +242,17 @@
           <section>
             <h2>Améliorer l'ensemble</h2>
             <p>Merge fréquents et résultat cohérent</p>
+            <aside class="notes">
+              Pas le choxi que tout le monde soit inclus
+              Quitte à avoir des features partielles et cachées (feature switch)
+            </aside>
           </section>
         </section>
 
         <section data-state="current-state-5">
           <section>
             <h2>Étape 5</h2>
-            <p>Un déploiement simple et rapide</p>
+            <p>Un déploiement <a href="#">simple</a> et rapide</p>
           </section>
 
           <section>
@@ -258,6 +268,9 @@
           <section>
             <h2>Évitez les erreurs humaines</h2>
             <p>Et réduisez votre "bus factor"</p>
+            <aside class="notes">
+              Etsy encore... pas de chance d'avoir personne pour un deploiement, tout le monde est capable!
+            </aside>
           </section>
 
           <section>
@@ -270,12 +283,13 @@
           <section>
             <h2>Le "release train" de SAFe</h2>
             <aside class="notes">
-              Passe souvent = pas de presse / rush
+              Passe souvent = pas de presse / rush de fin de version
+              Se combine bien avec feature switch
             </aside>
           </section>
 
           <section>
-            <h2>Obtenez du feedback plus rapide et fréquent!</h2>
+            <h2>Obtenez du feedback plus rapide et fréquent</h2>
           </section>
 
           <section>
@@ -284,6 +298,9 @@
 
           <section>
             <h2>Prévoyez les problèmes: pratiquez les "rollback"</h2>
+            <aside class="notes">
+              Comme dit la communauté d'Erlang: "plan for failure". Ça vaut pour tout.
+            </aside>
           </section>
         </section>
 
@@ -336,6 +353,10 @@
           <section>
             <h2>Évidement, pas besoin d'être aussi fou!</h2>
             <p>Il existe des outils pour .NET, java, etc.</p>
+            <aside class="notes">
+              .NET : octopus deploy
+              Autre : jenkins, go, snapCI, etc
+            </aside>
           </section>
 
           <section>
