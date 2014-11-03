@@ -61,6 +61,11 @@
 
       <div class="slides">
         <section>
+          <h2>Utilisez votre téléphone ou autre pour aller sur ce site</h2>
+          <p><a href="http://live-feedback.net">http://live-feedback.net</a></p>
+        </section>
+
+        <section>
           <h1>Livraison continue</h1>
           <h3>Une mise en production à chaque <a href="#">heure</a> de la journée</h3>
           <aside class="notes">
@@ -70,7 +75,7 @@
 
         <section>
           <h2>Les fameuses mise en production...</h2>
-          <p>Vous aimez ça?</p>
+          <p>Est-ce tout simplement "cowboy"?</p>
           <aside class="notes">
             Questions :
             - Qui a déjà fait une MEP? La nuit? La fds?
@@ -90,8 +95,8 @@
 
         <section>
           <section>
-            <h2>Qu'est-ce qu'on vient de réalise?</h2>
-            <p>On s'est donné les moyens de faire de la livraison continue!</p>
+            <h2>Qu'est-ce qu'on vient de réaliser?</h2>
+            <p class="fragment roll-in">On s'est donné les moyens de faire de la livraison continue!</p>
           </section>
 
           <section>
@@ -104,11 +109,17 @@
 
           <section>
             <h2>Qui serait assez confiant pour faire une mise en production lors d'une présentation?</h2>
-            <p>Pourquoi?</section>
+            <p>Pourquoi?</p>
             <aside class="notes">
               Annectode : chez Etsy tu dois faire une MEP la première journée. - http://codeascraft.com/2011/02/04/how-does-etsy-manage-development-and-operations/
             </aside>
           </section>
+
+          <section>
+            <h2>Ça ne s'obtient pas en 2 minutes</h2>
+            <p>Mais ça peut valoir la peine</p>
+          </section>
+
         </section>
 
 
@@ -145,6 +156,14 @@
               FB a tout centralisé... méga hg, mais c'est OK - https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/
             </aside>
           </section>
+
+          <section>
+            <h2>Tout ceci est testable!</h2>
+            <aside class="notes">
+              Par exemple: chef, puppter
+              Les migrations ça se test
+            </aside>
+          </section>
         </section>
 
         <section data-state="current-state-2">
@@ -179,7 +198,7 @@
           </section>
         </section>
 
-        <section>
+        <section data-state="current-state-3">
           <section>
             <h2>Étape 3</h2>
             <p>Les tests doivent pouvoir s'exécuter facilement</p>
@@ -189,20 +208,21 @@
           </section>
 
           <section>
-            <h2>À éviter:</h2>
-            <blockquote>Ces tests ne pourront pas s'exécuter sur ton poste</blockquote>
-            <aside class="notes">
-              Faire échouer les tests
-            </aside>
+            <h2>À éviter</h2>
+            <blockquote>Pour faire passer le test X tu as besoin d'installer Y... fait juste l'ignorer.</blockquote>
           </section>
 
           <section>
-            <h2>Du feedback rapide</h2>
-            <p>Et valable, car dans le même environnement que la production</p>
+            <h2>Du feedback rapide et continu</h2>
+            <p>Qui provient du même environnement que la prod!</p>
+            <aside class="notes">
+              Faire échouer les tests
+              Expliquer la différence entre ./test.sh quick || ./test.sh
+            </aside>
           </section>
         </section>
 
-        <section>
+        <section data-state="current-state-4">
           <section>
             <h2>Étape 4</h2>
             <p>Publier un et un seul paquet pour les installations</p>
@@ -219,14 +239,25 @@
           </section>
         </section>
 
-        <section>
+        <section data-state="current-state-5">
           <section>
             <h2>Étape 5</h2>
             <p>Un déploiement simple et rapide</p>
           </section>
 
           <section>
-            <h2>Déployez tôt</h2>
+            <h2>Déployez tôt et souvent</h2>
+            <p>Ne faites pas l'erreur de vous dire "c'est trop simple pour l'instant"</p>
+            <aside class="notes">
+              Confiance
+              Hardened
+              Pas de trucs apres 10 ans "ups, ouin, faudrait ca la...", comme les tests
+            </aside>
+          </section>
+
+          <section>
+            <h2>Évitez les erreurs humaines</h2>
+            <p>Et réduisez votre "bus factor"</p>
           </section>
 
           <section>
@@ -238,6 +269,9 @@
 
           <section>
             <h2>Le "release train" de SAFe</h2>
+            <aside class="notes">
+              Passe souvent = pas de presse / rush
+            </aside>
           </section>
 
           <section>
@@ -247,13 +281,58 @@
           <section>
             <h2>Déployez de petits morceaux chaque fois</h2>
           </section>
+
+          <section>
+            <h2>Prévoyez les problèmes: pratiquez les "rollback"</h2>
+          </section>
         </section>
 
-        <section>
+        <section data-state="current-state-6">
           <section>
             <h2>Étape 6</h2>
             <p>Déploiement sans interruption</p>
           </section>
+
+          <section>
+            <h2>@TODO diagramme</h2>
+          </section>
+
+          <section>
+            <h2>Ce n'est pas seulement pour les mises en production</h2>
+            <p>Augmente souvent la résilience du produit</p>
+          </section>
+        </section>
+
+        <section data-state"current-state-6">
+          <section>
+            <h2>Les fameuses mise en production...</h2>
+            <p>Est-ce tout simplement "cowboy"?</p>
+          </section>
+
+          <section>
+            <h2>Interessés?</h2>
+            <p>Commencez tranquillement à tout automatiser, ne prennez pas de trop grosses bouchées!</p>
+          </section>
+
+          <section>
+            <h2>Restez Lean</h2>
+          </section>
+
+          <section>
+            <h2>Votre client vous en remerciera</h2>
+            <p>Arrêtons d'être le goulot d'étranglement</p>
+          </section>
+
+          <section>
+            <h2>Évidement, pas besoin d'être aussi fou!</h2>
+            <p>Il existe des outils pour .NET, java, etc.</p>
+          </section>
+
+          <section>
+            <h2>Il reste également la question de la base de données...</h2>
+            <p class="fragment roll-in">Malheureusement, on devra se reprendre!</p>
+          </section>
+
         </section>
 
       </div>
