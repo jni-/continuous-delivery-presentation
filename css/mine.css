@@ -1,10 +1,6 @@
-#logo-live-feedback,
-#twitter {
-  padding-top: 10px;
-}
-
 #logo-live-feedback {
   position: fixed;
+  padding-top: 10px;
   top: 25px;
   left: 25px;
   font-size: 32px;
