@@ -20,12 +20,17 @@
     <link rel="stylesheet" href="css/mine.css" />
 
     <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
+      function linkToCss(cssFile) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'css/print/pdf.css';
+        link.href = cssFile;
         document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        linkToCss("css/print/pdf.css");
+        linkToCss("css/print/mine.css");
       }
     </script>
 
