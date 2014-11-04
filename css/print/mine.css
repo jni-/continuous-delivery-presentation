@@ -1,8 +1,13 @@
 #twitter,
-#logo-elapse,
 #logo-live-feedback,
+#logo-elapse,
 #states {
   display: none;
+}
+
+.slides section {
+  background: transparent url(../../images/logo-elapse.png) no-repeat bottom right;
+  background-size: 200px 56px;
 }
 
 body {
