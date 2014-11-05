@@ -20,7 +20,18 @@
 #twitter {
   position: fixed;
   top: 25px;
-  left: 48%;
+  left: 40%;
+  font-size: 32px;
+  line-height: 32px;
+  color: #13daec;
+  font-weight: bold;
+}
+
+#github {
+  padding-top: 10px;
+  position: fixed;
+  top: 25px;
+  left: 70%;
   font-size: 32px;
   line-height: 32px;
   color: #13daec;
