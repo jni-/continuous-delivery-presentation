@@ -58,6 +58,27 @@
   text-align: center;
 }
 
+#global-diagram p.fragment.fade-out,
+#global-diagram p.fragment img {
+  width: 800px;
+  height: 558px;
+}
+
+#global-diagram p.fragment {
+  text-align: center;
+}
+
+#global-diagram p.fragment,
+#global-diagram p.fragment.fade-out.visible,
+#global-diagram p.fragment.fade-out.visible.current-fragment {
+  display: none;
+}
+
+#global-diagram p.fragment.current-fragment,
+#global-diagram p.fragment.fade-out {
+  display: block;
+}
+
 .current-state-1 #states #state-1,
 .current-state-2 #states #state-1,
 .current-state-3 #states #state-1,
@@ -115,4 +136,3 @@
   background-color: #12daec;
   color: white;
 }
-
