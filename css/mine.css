@@ -84,6 +84,16 @@
   display: block;
 }
 
+section img.warning {
+  border: 0 none;
+  box-shadow: none;
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  padding: 0;
+}
+
 .current-state-1 #states #state-1,
 .current-state-2 #states #state-1,
 .current-state-3 #states #state-1,
