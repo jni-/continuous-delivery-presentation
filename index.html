@@ -104,6 +104,15 @@
 
         <section>
           <section>
+            <h2>Qui serait assez confiant pour faire une mise en production lors d'une présentation?</h2>
+            <p>Pourquoi?</p>
+            <aside class="notes">
+              Annectode : chez Etsy tu dois faire une MEP la première journée. - http://codeascraft.com/2011/02/04/how-does-etsy-manage-development-and-operations/ <br />
+              Ne pas dire tout suite l'argument du bus factor, juste confiance, facilité, etc
+            </aside>
+          </section>
+
+          <section>
             <h2>Qu'est-ce qu'on vient de réaliser?</h2>
             <p class="fragment roll-in">On s'est donné les moyens de faire de la livraison continue!</p>
           </section>
@@ -117,22 +126,36 @@
             <p class="fragment current-visible"><img src="images/diagramme-global-continuous-delivery.png" /></p>
           </section>
 
+          <section>
+            <h2>Je me sens moins novateur depuis mercredi passé...</h2>
+            <p class="fragment fade-in">Microsoft a fait la même démo que moi!</p>
+            <aside class="notes">
+              En fait, le livre "continuous delivery" de Jez Humble est sorti en 2010. <br />
+              Il y a aussi plusieurs autres compagnies qui font ça depuis lontemps : google, facebook, twitter, etc. <br />
+              Il y a même des compagnies comme Cambridge Health dans les hôpitaux qui commencent.
+            </aside>
+          </section>
 
           <section>
-            <h2>Qui serait assez confiant pour faire une mise en production lors d'une présentation?</h2>
-            <p>Pourquoi?</p>
+            <h2>Le keynote de la conférence Connect();</h2>
+            <p><img src="images/keynote-microsoft.png" height="500px" /></p>
             <aside class="notes">
-              Annectode : chez Etsy tu dois faire une MEP la première journée. - http://codeascraft.com/2011/02/04/how-does-etsy-manage-development-and-operations/ <br />
-              Ne pas dire tout suite l'argument du bus factor, juste confiance, facilité, etc
+              Je n'ai pas les screenshots pour les autres, mais : <br />
+              * 3 points importants : innovation, openess, agility <br />
+              * Agility : le point majeur est ce qui est sur le screenshot, le continuous delivery entre autre.
             </aside>
           </section>
 
           <section>
             <h2>Une mise en production, c'est un marathon</h2>
+            <aside class="notes">
+              * Ce n'est pas facile <br />
+              * On doit pratiquer tôt <br />
+              * On doit pratiquer souvent <br />
+              * On va voir des étapes qui aident l'entrainement : il faut des bonnes pratiques, des bons outils et des bons entrainements
+            </aside>
           </section>
-
         </section>
-
 
         <section data-state="current-state-1">
           <section>
@@ -209,7 +232,8 @@
             <p>Un conteneur pour tout le monde</p>
             <aside class="notes">
               Contient tous les outils pour rouler le site <br />
-              Évidement pas la seule solution
+              Évidement pas la seule solution <br />
+              <strong>C'est ce qui a été utilisé lors de la conférence Connect();... du asp.net sur linux, sur docker, dans azure.</strong>
             </aside>
           </section>
         </section>
