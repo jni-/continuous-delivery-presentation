@@ -1,6 +1,7 @@
 #twitter,
 #logo-live-feedback,
 #logo-elapse,
+#github,
 #states {
   display: none;
 }
@@ -10,6 +11,19 @@
   background-size: 200px 56px;
 }
 
+.blink h2 {
+  animation: none;
+  -webkit-animation: none;
+}
+
 body {
   background: #2b2b2b;
+}
+
+section#global-diagram p.fragment.fade-out {
+  display: none;
+}
+
+section#global-diagram p.fragment.show-on-print {
+  display: block;
 }
