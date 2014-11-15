@@ -58,6 +58,11 @@
   text-align: center;
 }
 
+.blink h2 {
+  animation: blinker ease-in-out 5s infinite;
+  -webkit-animation: blinker ease-in-out 5s infinite;
+}
+
 #global-diagram p.fragment.fade-out,
 #global-diagram p.fragment img {
   width: 800px;
@@ -135,4 +140,16 @@
 {
   background-color: #12daec;
   color: white;
+}
+
+@keyframes blinker {
+  0% { color: #FFFFFF; }
+  50% { color: #ED7B2F; }
+  100% { color: #FFFFFF; }
+}
+
+@-webkit-keyframes blinker {
+  0% { color: #FFFFFF; }
+  50% { color: #ED7B2F; }
+  100% { color: #FFFFFF; }
 }
